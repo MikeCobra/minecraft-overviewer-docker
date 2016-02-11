@@ -9,7 +9,6 @@ RUN echo "deb http://overviewer.org/debian ./" > /etc/apt/sources.list.d/overvie
     && apt-get install -y minecraft-overviewer
 RUN useradd -ms /bin/bash overviewer
 RUN wget -O /texturepack https://dl.dropboxusercontent.com/u/75066972/Tiny\ Pixels\ -\ 25th\ October.zip
-…
 COPY overviewer.config /
 
 VOLUME ["/world"]
